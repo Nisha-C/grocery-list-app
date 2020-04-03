@@ -51,4 +51,8 @@ export class GroceryListComponent {
     ngOnInit(): void{
         console.log('OnInit: LifeCycle Hook');
     }
+
+    onCheckCircleClicked(message:string): void{
+        this.pageTitle = 'Grocery List: ' + message;
+    }
 }

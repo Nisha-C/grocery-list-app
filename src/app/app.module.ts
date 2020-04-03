@@ -4,11 +4,13 @@ import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { GroceryListComponent } from './groceries/groceries-list.component';
+import { CheckCircleComponent} from '../shared/check-circle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GroceryListComponent
+    GroceryListComponent,
+    CheckCircleComponent
   ],
   imports: [
     BrowserModule,
