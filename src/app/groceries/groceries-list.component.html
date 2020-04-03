@@ -29,7 +29,12 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let grocery of groceries">
-                        <td></td>
+                        <td>
+                            <img [src]="grocery.imageUrl"
+                            [title]="grocery.groceryName"
+                            [style.width.px]= "imageWidth"
+                            [style.margin.px]="imageMargin">
+                        </td>
                         <td> {{ grocery.groceryName }} </td>
                         <td> {{ grocery.groceryCode }} </td>
                         <td> {{ grocery.quantity }} </td>
