@@ -5,10 +5,11 @@ import { Component } from '@angular/core';
 	template: `
 		<div> 
 			<h1> {{ pageTitle }} </h1>
-			<div> My First Component </div>
-		</div>`
+			<app-groceries></app-groceries>
+		</div>
+		`
 })
 
 export class AppComponent {
-	pageTitle = 'My Grocery List Manager';
+	pageTitle = 'My Groceries To Manager';
 }
