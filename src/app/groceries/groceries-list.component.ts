@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { IGrocery } from './grocery';
 
 @Component({
@@ -46,5 +46,9 @@ export class GroceryListComponent {
     
     toggleImage(): void {
         this.showImage = !this.showImage;
+    }
+
+    ngOnInit(): void{
+        console.log('OnInit: LifeCycle Hook');
     }
 }
