@@ -34,6 +34,7 @@ export class GroceryListComponent {
             "gotIt": false,
             "imageUrl": "assets/images/watermelon.png"   
         }   
-            
+        
     ];
+    
 }
