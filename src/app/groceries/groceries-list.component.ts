@@ -3,7 +3,8 @@ import { IGrocery } from './grocery';
 
 @Component({
     selector:'app-groceries',
-    templateUrl: 'groceries-list.component.html'
+    templateUrl: 'groceries-list.component.html',
+    styleUrls: ['grocery-list.component.css']
 })
 export class GroceryListComponent {
     pageTitle: string = 'Grocery List';
