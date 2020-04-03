@@ -40,9 +40,9 @@
                             [style.margin.px]="imageMargin">
                         </td>
                         <td> {{ grocery.groceryName }} </td>
-                        <td> {{ grocery.groceryCode }} </td>
+                        <td> {{ grocery.groceryCode | lowercase }} </td>
                         <td> {{ grocery.quantity }} </td>
-                        <td> {{ grocery.price }} </td>
+                        <td> {{ grocery.price | currency: 'USD': 'symbol': '1.2-2' }} </td>
                         <td> {{ grocery.gotIt }} </td>
                     </tr>
                     
