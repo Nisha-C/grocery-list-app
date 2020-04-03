@@ -8,6 +8,7 @@ export class GroceryListComponent {
     pageTitle: string = 'Grocery List';
     imageWidth: number = 50;
     imageMargin: number = 2;
+    showImage: boolean = false;
     groceries: any[] = [
         {
             "groceryID": 1, 
@@ -39,4 +40,7 @@ export class GroceryListComponent {
         
     ];
     
+    toggleImage(): void {
+        this.showImage = !this.showImage;
+    }
 }

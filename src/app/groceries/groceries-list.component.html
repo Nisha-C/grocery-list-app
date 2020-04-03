@@ -19,7 +19,9 @@
                 *ngIf="groceries && groceries.length">
                 <thead>
                     <tr>
-                        <th> <button class="btn btn-primary">Show image</button></th>
+                        <th> <button class="btn btn-primary"
+                            (click)="toggleImage()">{{showImage? 'Hide': 'Show'}} image</button>
+                        </th>
                         <th>Item</th>
                         <th>Code</th>
                         <th>Quantity</th>
@@ -30,7 +32,8 @@
                 <tbody>
                     <tr *ngFor="let grocery of groceries">
                         <td>
-                            <img [src]="grocery.imageUrl"
+                            <img *ngIf="showImage"
+                            [src]="grocery.imageUrl"
                             [title]="grocery.groceryName"
                             [style.width.px]= "imageWidth"
                             [style.margin.px]="imageMargin">
