@@ -32,12 +32,12 @@
                         <tr *ngFor="let grocery of groceries">
                             <td><img *ngIf="showImage"
                                 [src]="grocery.imageUrl" [style.width.px]="imageWidth"
-                                    [styel.margin.px]="imageMargin"></td>
+                                    [style.margin.px]="imageMargin"></td>
                             <td>{{grocery.groceryName}}</td>
                             <td>{{grocery.groceryCode | lowercase}}</td>
                             <td>{{grocery.quantity}}</td>
                             <td>{{grocery.price | currency:'CAD' }}</td>
-                            <td>{{grocery.gotIt}}</td>
+                            <td><app-check-circle [isChecked]='grocery.gotIt'></app-check-circle></td>
                         </tr>
                     </tbody>
                 </table>
