@@ -33,16 +33,8 @@ export class GroceryService {
                 "price": 8.99,
                 "gotIt": false,
                 "imageUrl": "assets/images/watermelon.png"   
-            },
-            {   
-                "groceryID": 4, 
-                "groceryName": "Baguette",
-                "groceryCode": "BGT-012",
-                "quantity": 2,
-                "price": 5.99,
-                "gotIt": true,
-                "imageUrl": "assets/images/loaf.png"    
             }
+            
         ]
     }
 }
