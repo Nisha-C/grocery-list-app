@@ -18,7 +18,7 @@ export class GroceryListComponent {
     constructor(private groceryService:GroceryService){}
 
     ngOnInit():void{
-        this.groceries =this.groceryService.getGroceries()
+        this.groceryService.getGroceries().subscribe(data=>this.groceries=data);;
     }
 
     toggleImage():void{

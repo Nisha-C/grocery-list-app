@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import {GroceryListComponent} from './groceries/groceries-list.component';
 import {FormsModule} from '@angular/forms';
 import {CheckCircleComponent} from 'src/shared/check-circle.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +15,8 @@ import {CheckCircleComponent} from 'src/shared/check-circle.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
